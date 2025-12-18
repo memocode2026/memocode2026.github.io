@@ -297,7 +297,10 @@ table tr td {
 .timeline-container {
     max-width: 700px;
     position: relative;
-    padding: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .timeline-container::before {
@@ -326,7 +329,7 @@ table tr td {
 
 .timeline-content {
     background: rgb(211, 207, 207);
-    padding: 5px 25px;
+    padding: 10px 25px;
     width: 40%;
     border-radius: 6px;
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
@@ -340,15 +343,11 @@ table tr td {
 }
 
 .timeline-content h3 {
-    margin: 0;
-    font-size: 1.1em;
-    color: #00001d;
+    margin: 0!important;
 }
 
 .timeline-content p {
-    margin: 4px 0 0;
-    font-size: 0.95em;
-    color: #131212;
+    margin: 4px 0 0 0;
 }
 
 .timeline-circle {
