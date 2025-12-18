@@ -148,7 +148,7 @@ ul#menu li a:hover {
     margin-bottom: 5px;
 }
 
-#content h2, #content h3 {
+#content h1:not(:first-child), #content h2:not(:first-child), #content h3:not(:first-child) {
     margin-top: 30px;
 }
 #content h4, #content h5, #content h6 {
