@@ -333,13 +333,9 @@ table tr td {
     width: 40%;
     border-radius: 6px;
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
-    transition: transform 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
     position: relative;
     z-index: 1;
-}
-
-.timeline-content:hover {
-    transform: translateY(-8px);
 }
 
 .timeline-content h3 {
@@ -358,14 +354,23 @@ table tr td {
     position: absolute;
     left: 50%;
     top: 50%;
-    transform: translate(-50%, -50%);
+    margin-left: -6px;
+    margin-top: -6px;
     transition: all 0.2s ease-in-out;
     z-index: 2;
 }
 
-.timeline-circle:hover {
-    width: 16px;
-    height: 16px;
+.timeline-item:nth-child(odd) .timeline-content {
+    transform-origin: right;
+}
+.timeline-item:nth-child(even) .timeline-content {
+    transform-origin: left;
+}
+.timeline-item:has(.timeline-content:hover) .timeline-content, .timeline-item:has(.timeline-circle:hover) .timeline-content {
+    transform: scale(1.06);
+}
+.timeline-item:has(.timeline-content:hover) .timeline-circle, .timeline-item:has(.timeline-circle:hover) .timeline-circle {
+    transform: scale(1.33);
     background: #0056b3;
 }
 
