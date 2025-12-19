@@ -308,7 +308,7 @@ table tr td {
     position: absolute;
     left: 50%;
     width: 3px;
-    height: 90%;
+    height: 100%;
     background: #00001d;
     transform: translateX(-50%);
     border-radius: 5px;
@@ -367,4 +367,14 @@ table tr td {
     width: 16px;
     height: 16px;
     background: #0056b3;
+}
+
+.comment {
+    display: block;
+    width: fit-content;
+    padding: 5px;
+    line-height: 1.7em;
+    text-align: justify;
+    background: #ffc107;
+    color: #000;
 }
